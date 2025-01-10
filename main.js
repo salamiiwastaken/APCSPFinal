@@ -4,7 +4,7 @@ var textInput = document.getElementById('textinput');
 console.log("Hi");
 //test to see if this works
 textInput.addEventListener("change", function(){
-    console.log("The user has typed ''"+textInput.textContent+"''");
+    console.log("The user has typed ''"+getText(textInput)+"''");
 });
 
 
