@@ -2,27 +2,17 @@
 <html>
 
 <head>
-    <title>Read Text File</title>
+    <title>Homestuck Character Finder</title>
 </head>
 
 <body>
-    <input type="file" name="inputfile" id="inputfile">
+    <h1>Choose a number 1-8130</h1>
+    <input type="text" name="textinput" id="textinput">
     <br>
 
     <pre id="output"></pre>
 
-    <script type="text/javascript">
-        document.getElementById('inputfile')
-            .addEventListener('change', function () {
-
-                let fr = new FileReader();
-                fr.onload = function () {
-                    document.getElementById('output')
-                        .textContent = fr.result;
-                }
-
-                fr.readAsText(this.files[0]);
-            })
+    <script src="main.js">
     </script>
 </body>
 
