@@ -1,5 +1,5 @@
 // Variables \\\
-var swearWords = [crap, darn, heck, damn, hell]
+var swearWords = [crap, Crap, darn, Darn, heck, Heck, damn, Damn, hell, Hell]
 const textOutput = document.getElementById('output')
 
 document.getElementById('inputfile').addEventListener('change', function () {
@@ -13,9 +13,9 @@ document.getElementById('inputfile').addEventListener('change', function () {
 
 // Functions \\
 function searchTextForString(string){
-    for(let i = 0; i < string.length-1; i++){
-        replace(/swearWords[i]/gi, "****")
+    for(let i = 0; i < swearWords.length-1; i++){
+        let newTextOutput
+        newTextOutput = textOutput.replace(swearWords[i], "****")
+        textOutput.textContent=(newTextOutput);
     }
 }
-
-// there's no way this works lololol
