@@ -3,14 +3,18 @@ var swearWords = [crap, Crap, darn, Darn, heck, Heck, damn, Damn, hell, Hell]
 const textOutput = document.getElementById('output')
 
 console.log("Hi");
-document.getElementById('inputfile').addEventListener('change', function () {
+
+document.getElementById('inputfile')
+.addEventListener('change', function () {
+
     let fr = new FileReader();
     fr.onload = function () {
-        document.getElementById('output').textContent = fr.result;
+        document.getElementById('output')
+            .textContent = fr.result;
     }
+
     fr.readAsText(this.files[0]);
-    //replaceSwears(textOutput)
-});
+})
 /*
 // Functions \\
 function replaceSwears(originalText){
