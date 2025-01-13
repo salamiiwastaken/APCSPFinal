@@ -8,11 +8,11 @@ document.getElementById('inputfile').addEventListener('change', function () {
         document.getElementById('output').textContent = fr.result;
     }
     r.readAsText(this.files[0]);
-    searchTextForString(textOutput)
+    replaceSwears(textOutput)
 });
 
 // Functions \\
-function searchTextForString(string){
+function replaceSwears(originalText){
     for(let i = 0; i < swearWords.length-1; i++){
         let newTextOutput
         newTextOutput = textOutput.replace(swearWords[i], "****")
