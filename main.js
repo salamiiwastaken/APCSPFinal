@@ -2,6 +2,7 @@
 var swearWords = [crap, Crap, darn, Darn, heck, Heck, damn, Damn, hell, Hell]
 const textOutput = document.getElementById('output')
 
+console.log("Hi");
 document.getElementById('inputfile').addEventListener('change', function () {
     let fr = new FileReader();
     fr.onload = function () {
